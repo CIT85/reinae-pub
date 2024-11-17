@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: #F8F8F8; 
+    background-color: #F5FEFA; 
     color: #2F1B16;
 }
 
@@ -19,21 +19,163 @@ a:hover, a:active {
     color: #4E3629;
 }
 
-table, tr, th, td, caption {
-    border: 1px solid #2F1B16;
-    font-family: 'Courier New', Courier, monospace;
-    border-collapse: collapse;
-    padding: 0.5rem;
+
+
+
+
+
+/* Drink Menu Table Styles */
+#drinkmenue {
+  width: auto; /* Adjust width to fit content */
+  margin: 40px auto; /* Center the table horizontally */
+  border-collapse: collapse;
 }
 
-caption {
-    color: #4E3629; 
+#drinkmenue th {
+  background-color: #9a573e; /* Deep red-brown for a warm, festive feel */
+  color: white;
+  font-size: 1.3em;
+  padding: 12px 15px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-th, td {
-    background-color: #D9CBB1; 
+#drinkmenue td {
+  color: #6b3015; /* Rich brown text color */
+  padding: 10px 15px;
+  font-family: 'Verdana', sans-serif;
 }
 
-th {
-    color: #2F1B16; 
+#drinkmenue th, 
+#drinkmenue td {
+  border: 3px solid #9a573e; /* Warm border color */
+  text-align: center;
+}
+
+#drinkmenue tr:nth-child(even) td {
+  background-color: #e0aeb2; /* Soft teal for even rows */
+}
+
+#drinkmenue tr:nth-child(odd) td {
+  background-color: #ead3d5; /* Light pink for odd rows */
+}
+
+#drinkmenue td::before {
+  content: '❄️'; /* Snowflake for Christmas theme */
+}
+
+#drinkmenue th:first-child::before {
+  content: '☕'; /* Coffee icon for the header */
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+/* Hours Table Styles */
+#hours-table {
+  width: auto;
+  margin: 20px auto; 
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  border: 6px solid #aacdd8; /* Cool teal border */
+}
+
+#hours-table th {
+  background-color: #6CB7CF; /* Bright teal for the header */
+  color: white;
+  font-size: 1.2em;
+  padding: 10px 15px;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+#hours-table td {
+  color: #6b3015; /* Rich brown text color */
+  padding: 10px 15px;
+  font-family: 'Verdana', sans-serif;
+  text-align: center;
+}
+
+#hours-table th, 
+#hours-table td {
+  border: 1px solid #6CB7CF; /* Border for header and cells */
+}
+
+/* Alternate Row Colors */
+#hours-table tbody tr:nth-child(even) {
+  background-color: #e0f7fa; /* Light teal for even rows */
+}
+#hours-table tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* White for odd rows */
+}
+/* Special Row for Christmas Eve */
+#hours-table tbody tr:last-child td {
+  background-color: #FECACE; /* Soft peach for Christmas Eve row */
+  font-weight: bold; /* Highlight text */
+  color: #6b3015; /* Match other text colors */
+}
+
+
+
+
+
+
+
+
+
+
+#special-events form {
+  max-width: 600px; /* Set a max-width for the form */
+  margin: 0 auto; /* Center the form */
+  padding: 20px; /* Add padding around the form */
+  background-color: #f9f9f9; /* Light background color for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+#special-events label {
+  display: block; /* Makes labels take up the full width and appear on separate lines */
+  margin-bottom: 8px; /* Adds space below each label */
+  font-weight: bold; /* Makes the labels stand out */
+}
+
+#special-events input,
+#special-events select,
+#special-events textarea {
+  width: 100%; /* Make the inputs fill the container */
+  padding: 10px; /* Add padding inside the fields */
+  margin-bottom: 20px; /* Space between each input field */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Slightly rounded corners */
+  font-size: 16px; /* Adjust the font size for readability */
+}
+
+#special-events button {
+  width: 100%; /* Make the button fill the width of the form */
+  padding: 12px;
+  background-color: #2596be; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove the default border */
+  border-radius: 4px; /* Rounded button edges */
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#special-events button:hover {
+  background-color: #0bd9f1; /* Change background on hover */
+}
+
+#special-events p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
 }
