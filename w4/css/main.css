@@ -24,6 +24,11 @@ a:hover, a:active {
 
 
 
+
+
+
+
+/* 
 /* Drink Menu Table Styles */
 #drinkmenue {
   width: auto; /* Adjust width to fit content */
@@ -31,9 +36,26 @@ a:hover, a:active {
   border-collapse: collapse;
 }
 
+
+
+
+/* Specificity: 1-0-1
+   Explanation:
+   - 1 point for the ID selector (#drinkmenue) - ID selectors are very specific, meaning they target an element with that exact ID.
+   - 0 points for class selectors (none used here).
+   - 1 point for the element selector (th) - this targets all <th> elements within the #drinkmenue element.
+   The total specificity of 1-0-1 means this rule is quite specific and will override general rules for <th> elements or <th> elements inside other containers with lower specificity.
+*/
+
+
+
+
+
+
+
 #drinkmenue th {
   background-color: #9a573e; /* Deep red-brown for a warm, festive feel */
-  color: white;
+  color: #F5FEFA;
   font-size: 1.3em;
   padding: 12px 15px;
   font-family: 'Arial', sans-serif;
@@ -50,16 +72,16 @@ a:hover, a:active {
 
 #drinkmenue th, 
 #drinkmenue td {
-  border: 3px solid #9a573e; /* Warm border color */
+  border: 3px solid #9A573E; /* Warm border color */
   text-align: center;
 }
 
 #drinkmenue tr:nth-child(even) td {
-  background-color: #e0aeb2; /* Soft teal for even rows */
+  background-color: #F5FEFA; /* Soft teal for even rows */
 }
 
 #drinkmenue tr:nth-child(odd) td {
-  background-color: #ead3d5; /* Light pink for odd rows */
+  background-color: #FECACE; /* Light pink for odd rows */
 }
 
 #drinkmenue td::before {
@@ -84,13 +106,13 @@ a:hover, a:active {
   width: auto;
   margin: 20px auto; 
   border-collapse: collapse;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  border: 6px solid #aacdd8; /* Cool teal border */
+  box-shadow: 0 4px 8px #6B3015; /* Subtle shadow for depth */
+  border: 6px solid #6691BC; /* Cool teal border */
 }
 
 #hours-table th {
   background-color: #6CB7CF; /* Bright teal for the header */
-  color: white;
+  color: #F5FEFA;
   font-size: 1.2em;
   padding: 10px 15px;
   font-family: 'Arial', sans-serif;
@@ -99,7 +121,7 @@ a:hover, a:active {
 }
 
 #hours-table td {
-  color: #6b3015; /* Rich brown text color */
+  color: #6B3015; /* Rich brown text color */
   padding: 10px 15px;
   font-family: 'Verdana', sans-serif;
   text-align: center;
@@ -112,22 +134,22 @@ a:hover, a:active {
 
 /* Alternate Row Colors */
 #hours-table tbody tr:nth-child(even) {
-  background-color: #e0f7fa; /* Light teal for even rows */
+  background-color: #A5BBEC; /* color for even rows */
 }
 #hours-table tbody tr:nth-child(odd) {
-  background-color: #ffffff; /* White for odd rows */
+  background-color: #F5FEFA; /* color for odd rows */
 }
 /* Special Row for Christmas Eve */
 #hours-table tbody tr:last-child td {
   background-color: #FECACE; /* Soft peach for Christmas Eve row */
   font-weight: bold; /* Highlight text */
-  color: #6b3015; /* Match other text colors */
+  color: #6B3015; /* Match other text colors */
 }
 
 
 
 
-
+ 
 
 
 
